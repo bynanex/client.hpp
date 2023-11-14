@@ -92,19 +92,19 @@ namespace CBaseAnimGraphController {
 namespace CBasePlayerController {
     constexpr std::ptrdiff_t m_nFinalPredictedTick = 0x548;
     constexpr std::ptrdiff_t m_CommandContext = 0x550;
-    constexpr std::ptrdiff_t m_nInButtonsWhichAreToggles = 0x5D0;
-    constexpr std::ptrdiff_t m_nTickBase = 0x5D8;
-    constexpr std::ptrdiff_t m_hPawn = 0x5DC;
-    constexpr std::ptrdiff_t m_hPredictedPawn = 0x5E0;
-    constexpr std::ptrdiff_t m_nSplitScreenSlot = 0x5E4;
-    constexpr std::ptrdiff_t m_hSplitOwner = 0x5E8;
-    constexpr std::ptrdiff_t m_hSplitScreenPlayers = 0x5F0;
-    constexpr std::ptrdiff_t m_bIsHLTV = 0x608;
-    constexpr std::ptrdiff_t m_iConnected = 0x60C;
-    constexpr std::ptrdiff_t m_iszPlayerName = 0x610;
-    constexpr std::ptrdiff_t m_steamID = 0x698;
-    constexpr std::ptrdiff_t m_bIsLocalPlayerController = 0x6A0;
-    constexpr std::ptrdiff_t m_iDesiredFOV = 0x6A4;
+    constexpr std::ptrdiff_t m_nInButtonsWhichAreToggles = 0x5E8;
+    constexpr std::ptrdiff_t m_nTickBase = 0x5F0;
+    constexpr std::ptrdiff_t m_hPawn = 0x5F4;
+    constexpr std::ptrdiff_t m_hPredictedPawn = 0x5F8;
+    constexpr std::ptrdiff_t m_nSplitScreenSlot = 0x5FC;
+    constexpr std::ptrdiff_t m_hSplitOwner = 0x600;
+    constexpr std::ptrdiff_t m_hSplitScreenPlayers = 0x608;
+    constexpr std::ptrdiff_t m_bIsHLTV = 0x620;
+    constexpr std::ptrdiff_t m_iConnected = 0x624;
+    constexpr std::ptrdiff_t m_iszPlayerName = 0x628;
+    constexpr std::ptrdiff_t m_steamID = 0x6B0;
+    constexpr std::ptrdiff_t m_bIsLocalPlayerController = 0x6B8;
+    constexpr std::ptrdiff_t m_iDesiredFOV = 0x6BC;
 }
 
 namespace CBasePlayerVData {
@@ -220,64 +220,64 @@ namespace CCSPlayerBase_CameraServices {
 }
 
 namespace CCSPlayerController {
-    constexpr std::ptrdiff_t m_pInGameMoneyServices = 0x6D0;
-    constexpr std::ptrdiff_t m_pInventoryServices = 0x6D8;
-    constexpr std::ptrdiff_t m_pActionTrackingServices = 0x6E0;
-    constexpr std::ptrdiff_t m_pDamageServices = 0x6E8;
-    constexpr std::ptrdiff_t m_iPing = 0x6F0;
-    constexpr std::ptrdiff_t m_bHasCommunicationAbuseMute = 0x6F4;
-    constexpr std::ptrdiff_t m_szCrosshairCodes = 0x6F8;
-    constexpr std::ptrdiff_t m_iPendingTeamNum = 0x700;
-    constexpr std::ptrdiff_t m_flForceTeamTime = 0x704;
-    constexpr std::ptrdiff_t m_iCompTeammateColor = 0x708;
-    constexpr std::ptrdiff_t m_bEverPlayedOnTeam = 0x70C;
-    constexpr std::ptrdiff_t m_flPreviousForceJoinTeamTime = 0x710;
-    constexpr std::ptrdiff_t m_szClan = 0x718;
-    constexpr std::ptrdiff_t m_sSanitizedPlayerName = 0x720;
-    constexpr std::ptrdiff_t m_iCoachingTeam = 0x728;
-    constexpr std::ptrdiff_t m_nPlayerDominated = 0x730;
-    constexpr std::ptrdiff_t m_nPlayerDominatingMe = 0x738;
-    constexpr std::ptrdiff_t m_iCompetitiveRanking = 0x740;
-    constexpr std::ptrdiff_t m_iCompetitiveWins = 0x744;
-    constexpr std::ptrdiff_t m_iCompetitiveRankType = 0x748;
-    constexpr std::ptrdiff_t m_iCompetitiveRankingPredicted_Win = 0x74C;
-    constexpr std::ptrdiff_t m_iCompetitiveRankingPredicted_Loss = 0x750;
-    constexpr std::ptrdiff_t m_iCompetitiveRankingPredicted_Tie = 0x754;
-    constexpr std::ptrdiff_t m_nEndMatchNextMapVote = 0x758;
-    constexpr std::ptrdiff_t m_unActiveQuestId = 0x75C;
-    constexpr std::ptrdiff_t m_nQuestProgressReason = 0x760;
-    constexpr std::ptrdiff_t m_unPlayerTvControlFlags = 0x764;
-    constexpr std::ptrdiff_t m_iDraftIndex = 0x790;
-    constexpr std::ptrdiff_t m_msQueuedModeDisconnectionTimestamp = 0x794;
-    constexpr std::ptrdiff_t m_uiAbandonRecordedReason = 0x798;
-    constexpr std::ptrdiff_t m_bCannotBeKicked = 0x79C;
-    constexpr std::ptrdiff_t m_bEverFullyConnected = 0x79D;
-    constexpr std::ptrdiff_t m_bAbandonAllowsSurrender = 0x79E;
-    constexpr std::ptrdiff_t m_bAbandonOffersInstantSurrender = 0x79F;
-    constexpr std::ptrdiff_t m_bDisconnection1MinWarningPrinted = 0x7A0;
-    constexpr std::ptrdiff_t m_bScoreReported = 0x7A1;
-    constexpr std::ptrdiff_t m_nDisconnectionTick = 0x7A4;
-    constexpr std::ptrdiff_t m_bControllingBot = 0x7B0;
-    constexpr std::ptrdiff_t m_bHasControlledBotThisRound = 0x7B1;
-    constexpr std::ptrdiff_t m_bHasBeenControlledByPlayerThisRound = 0x7B2;
-    constexpr std::ptrdiff_t m_nBotsControlledThisRound = 0x7B4;
-    constexpr std::ptrdiff_t m_bCanControlObservedBot = 0x7B8;
-    constexpr std::ptrdiff_t m_hPlayerPawn = 0x7BC;
-    constexpr std::ptrdiff_t m_hObserverPawn = 0x7C0;
-    constexpr std::ptrdiff_t m_bPawnIsAlive = 0x7C4;
-    constexpr std::ptrdiff_t m_iPawnHealth = 0x7C8;
-    constexpr std::ptrdiff_t m_iPawnArmor = 0x7CC;
-    constexpr std::ptrdiff_t m_bPawnHasDefuser = 0x7D0;
-    constexpr std::ptrdiff_t m_bPawnHasHelmet = 0x7D1;
-    constexpr std::ptrdiff_t m_nPawnCharacterDefIndex = 0x7D2;
-    constexpr std::ptrdiff_t m_iPawnLifetimeStart = 0x7D4;
-    constexpr std::ptrdiff_t m_iPawnLifetimeEnd = 0x7D8;
-    constexpr std::ptrdiff_t m_iPawnBotDifficulty = 0x7DC;
-    constexpr std::ptrdiff_t m_hOriginalControllerOfCurrentPawn = 0x7E0;
-    constexpr std::ptrdiff_t m_iScore = 0x7E4;
-    constexpr std::ptrdiff_t m_vecKills = 0x7E8;
-    constexpr std::ptrdiff_t m_iMVPs = 0x800;
-    constexpr std::ptrdiff_t m_bIsPlayerNameDirty = 0x804;
+    constexpr std::ptrdiff_t m_pInGameMoneyServices = 0x6E8;
+    constexpr std::ptrdiff_t m_pInventoryServices = 0x6F0;
+    constexpr std::ptrdiff_t m_pActionTrackingServices = 0x6F8;
+    constexpr std::ptrdiff_t m_pDamageServices = 0x700;
+    constexpr std::ptrdiff_t m_iPing = 0x708;
+    constexpr std::ptrdiff_t m_bHasCommunicationAbuseMute = 0x70C;
+    constexpr std::ptrdiff_t m_szCrosshairCodes = 0x710;
+    constexpr std::ptrdiff_t m_iPendingTeamNum = 0x718;
+    constexpr std::ptrdiff_t m_flForceTeamTime = 0x71C;
+    constexpr std::ptrdiff_t m_iCompTeammateColor = 0x720;
+    constexpr std::ptrdiff_t m_bEverPlayedOnTeam = 0x724;
+    constexpr std::ptrdiff_t m_flPreviousForceJoinTeamTime = 0x728;
+    constexpr std::ptrdiff_t m_szClan = 0x730;
+    constexpr std::ptrdiff_t m_sSanitizedPlayerName = 0x738;
+    constexpr std::ptrdiff_t m_iCoachingTeam = 0x740;
+    constexpr std::ptrdiff_t m_nPlayerDominated = 0x748;
+    constexpr std::ptrdiff_t m_nPlayerDominatingMe = 0x750;
+    constexpr std::ptrdiff_t m_iCompetitiveRanking = 0x758;
+    constexpr std::ptrdiff_t m_iCompetitiveWins = 0x75C;
+    constexpr std::ptrdiff_t m_iCompetitiveRankType = 0x760;
+    constexpr std::ptrdiff_t m_iCompetitiveRankingPredicted_Win = 0x764;
+    constexpr std::ptrdiff_t m_iCompetitiveRankingPredicted_Loss = 0x768;
+    constexpr std::ptrdiff_t m_iCompetitiveRankingPredicted_Tie = 0x76C;
+    constexpr std::ptrdiff_t m_nEndMatchNextMapVote = 0x770;
+    constexpr std::ptrdiff_t m_unActiveQuestId = 0x774;
+    constexpr std::ptrdiff_t m_nQuestProgressReason = 0x778;
+    constexpr std::ptrdiff_t m_unPlayerTvControlFlags = 0x77C;
+    constexpr std::ptrdiff_t m_iDraftIndex = 0x7A8;
+    constexpr std::ptrdiff_t m_msQueuedModeDisconnectionTimestamp = 0x7AC;
+    constexpr std::ptrdiff_t m_uiAbandonRecordedReason = 0x7B0;
+    constexpr std::ptrdiff_t m_bCannotBeKicked = 0x7B4;
+    constexpr std::ptrdiff_t m_bEverFullyConnected = 0x7B5;
+    constexpr std::ptrdiff_t m_bAbandonAllowsSurrender = 0x7B6;
+    constexpr std::ptrdiff_t m_bAbandonOffersInstantSurrender = 0x7B7;
+    constexpr std::ptrdiff_t m_bDisconnection1MinWarningPrinted = 0x7B8;
+    constexpr std::ptrdiff_t m_bScoreReported = 0x7B9;
+    constexpr std::ptrdiff_t m_nDisconnectionTick = 0x7BC;
+    constexpr std::ptrdiff_t m_bControllingBot = 0x7C8;
+    constexpr std::ptrdiff_t m_bHasControlledBotThisRound = 0x7C9;
+    constexpr std::ptrdiff_t m_bHasBeenControlledByPlayerThisRound = 0x7CA;
+    constexpr std::ptrdiff_t m_nBotsControlledThisRound = 0x7CC;
+    constexpr std::ptrdiff_t m_bCanControlObservedBot = 0x7D0;
+    constexpr std::ptrdiff_t m_hPlayerPawn = 0x7D4;
+    constexpr std::ptrdiff_t m_hObserverPawn = 0x7D8;
+    constexpr std::ptrdiff_t m_bPawnIsAlive = 0x7DC;
+    constexpr std::ptrdiff_t m_iPawnHealth = 0x7E0;
+    constexpr std::ptrdiff_t m_iPawnArmor = 0x7E4;
+    constexpr std::ptrdiff_t m_bPawnHasDefuser = 0x7E8;
+    constexpr std::ptrdiff_t m_bPawnHasHelmet = 0x7E9;
+    constexpr std::ptrdiff_t m_nPawnCharacterDefIndex = 0x7EA;
+    constexpr std::ptrdiff_t m_iPawnLifetimeStart = 0x7EC;
+    constexpr std::ptrdiff_t m_iPawnLifetimeEnd = 0x7F0;
+    constexpr std::ptrdiff_t m_iPawnBotDifficulty = 0x7F4;
+    constexpr std::ptrdiff_t m_hOriginalControllerOfCurrentPawn = 0x7F8;
+    constexpr std::ptrdiff_t m_iScore = 0x7FC;
+    constexpr std::ptrdiff_t m_vecKills = 0x800;
+    constexpr std::ptrdiff_t m_iMVPs = 0x818;
+    constexpr std::ptrdiff_t m_bIsPlayerNameDirty = 0x81C;
 }
 
 namespace CCSPlayerController_ActionTrackingServices {
@@ -2117,7 +2117,7 @@ namespace C_ColorCorrectionVolume {
 
 namespace C_CommandContext {
     constexpr std::ptrdiff_t needsprocessing = 0x0;
-    constexpr std::ptrdiff_t command_number = 0x78;
+    constexpr std::ptrdiff_t command_number = 0x90;
 }
 
 namespace C_CsmFovOverride {
