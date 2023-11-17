@@ -92,19 +92,19 @@ namespace CBaseAnimGraphController {
 namespace CBasePlayerController {
     constexpr std::ptrdiff_t m_nFinalPredictedTick = 0x548;
     constexpr std::ptrdiff_t m_CommandContext = 0x550;
-    constexpr std::ptrdiff_t m_nInButtonsWhichAreToggles = 0x5E8;
-    constexpr std::ptrdiff_t m_nTickBase = 0x5F0;
-    constexpr std::ptrdiff_t m_hPawn = 0x5F4;
-    constexpr std::ptrdiff_t m_hPredictedPawn = 0x5F8;
-    constexpr std::ptrdiff_t m_nSplitScreenSlot = 0x5FC;
-    constexpr std::ptrdiff_t m_hSplitOwner = 0x600;
-    constexpr std::ptrdiff_t m_hSplitScreenPlayers = 0x608;
-    constexpr std::ptrdiff_t m_bIsHLTV = 0x620;
-    constexpr std::ptrdiff_t m_iConnected = 0x624;
-    constexpr std::ptrdiff_t m_iszPlayerName = 0x628;
-    constexpr std::ptrdiff_t m_steamID = 0x6B0;
-    constexpr std::ptrdiff_t m_bIsLocalPlayerController = 0x6B8;
-    constexpr std::ptrdiff_t m_iDesiredFOV = 0x6BC;
+    constexpr std::ptrdiff_t m_nInButtonsWhichAreToggles = 0x600;
+    constexpr std::ptrdiff_t m_nTickBase = 0x608;
+    constexpr std::ptrdiff_t m_hPawn = 0x60C;
+    constexpr std::ptrdiff_t m_hPredictedPawn = 0x610;
+    constexpr std::ptrdiff_t m_nSplitScreenSlot = 0x614;
+    constexpr std::ptrdiff_t m_hSplitOwner = 0x618;
+    constexpr std::ptrdiff_t m_hSplitScreenPlayers = 0x620;
+    constexpr std::ptrdiff_t m_bIsHLTV = 0x638;
+    constexpr std::ptrdiff_t m_iConnected = 0x63C;
+    constexpr std::ptrdiff_t m_iszPlayerName = 0x640;
+    constexpr std::ptrdiff_t m_steamID = 0x6C8;
+    constexpr std::ptrdiff_t m_bIsLocalPlayerController = 0x6D0;
+    constexpr std::ptrdiff_t m_iDesiredFOV = 0x6D4;
 }
 
 namespace CBasePlayerVData {
@@ -220,64 +220,64 @@ namespace CCSPlayerBase_CameraServices {
 }
 
 namespace CCSPlayerController {
-    constexpr std::ptrdiff_t m_pInGameMoneyServices = 0x6E8;
-    constexpr std::ptrdiff_t m_pInventoryServices = 0x6F0;
-    constexpr std::ptrdiff_t m_pActionTrackingServices = 0x6F8;
-    constexpr std::ptrdiff_t m_pDamageServices = 0x700;
-    constexpr std::ptrdiff_t m_iPing = 0x708;
-    constexpr std::ptrdiff_t m_bHasCommunicationAbuseMute = 0x70C;
-    constexpr std::ptrdiff_t m_szCrosshairCodes = 0x710;
-    constexpr std::ptrdiff_t m_iPendingTeamNum = 0x718;
-    constexpr std::ptrdiff_t m_flForceTeamTime = 0x71C;
-    constexpr std::ptrdiff_t m_iCompTeammateColor = 0x720;
-    constexpr std::ptrdiff_t m_bEverPlayedOnTeam = 0x724;
-    constexpr std::ptrdiff_t m_flPreviousForceJoinTeamTime = 0x728;
-    constexpr std::ptrdiff_t m_szClan = 0x730;
-    constexpr std::ptrdiff_t m_sSanitizedPlayerName = 0x738;
-    constexpr std::ptrdiff_t m_iCoachingTeam = 0x740;
-    constexpr std::ptrdiff_t m_nPlayerDominated = 0x748;
-    constexpr std::ptrdiff_t m_nPlayerDominatingMe = 0x750;
-    constexpr std::ptrdiff_t m_iCompetitiveRanking = 0x758;
-    constexpr std::ptrdiff_t m_iCompetitiveWins = 0x75C;
-    constexpr std::ptrdiff_t m_iCompetitiveRankType = 0x760;
-    constexpr std::ptrdiff_t m_iCompetitiveRankingPredicted_Win = 0x764;
-    constexpr std::ptrdiff_t m_iCompetitiveRankingPredicted_Loss = 0x768;
-    constexpr std::ptrdiff_t m_iCompetitiveRankingPredicted_Tie = 0x76C;
-    constexpr std::ptrdiff_t m_nEndMatchNextMapVote = 0x770;
-    constexpr std::ptrdiff_t m_unActiveQuestId = 0x774;
-    constexpr std::ptrdiff_t m_nQuestProgressReason = 0x778;
-    constexpr std::ptrdiff_t m_unPlayerTvControlFlags = 0x77C;
-    constexpr std::ptrdiff_t m_iDraftIndex = 0x7A8;
-    constexpr std::ptrdiff_t m_msQueuedModeDisconnectionTimestamp = 0x7AC;
-    constexpr std::ptrdiff_t m_uiAbandonRecordedReason = 0x7B0;
-    constexpr std::ptrdiff_t m_bCannotBeKicked = 0x7B4;
-    constexpr std::ptrdiff_t m_bEverFullyConnected = 0x7B5;
-    constexpr std::ptrdiff_t m_bAbandonAllowsSurrender = 0x7B6;
-    constexpr std::ptrdiff_t m_bAbandonOffersInstantSurrender = 0x7B7;
-    constexpr std::ptrdiff_t m_bDisconnection1MinWarningPrinted = 0x7B8;
-    constexpr std::ptrdiff_t m_bScoreReported = 0x7B9;
-    constexpr std::ptrdiff_t m_nDisconnectionTick = 0x7BC;
-    constexpr std::ptrdiff_t m_bControllingBot = 0x7C8;
-    constexpr std::ptrdiff_t m_bHasControlledBotThisRound = 0x7C9;
-    constexpr std::ptrdiff_t m_bHasBeenControlledByPlayerThisRound = 0x7CA;
-    constexpr std::ptrdiff_t m_nBotsControlledThisRound = 0x7CC;
-    constexpr std::ptrdiff_t m_bCanControlObservedBot = 0x7D0;
-    constexpr std::ptrdiff_t m_hPlayerPawn = 0x7D4;
-    constexpr std::ptrdiff_t m_hObserverPawn = 0x7D8;
-    constexpr std::ptrdiff_t m_bPawnIsAlive = 0x7DC;
-    constexpr std::ptrdiff_t m_iPawnHealth = 0x7E0;
-    constexpr std::ptrdiff_t m_iPawnArmor = 0x7E4;
-    constexpr std::ptrdiff_t m_bPawnHasDefuser = 0x7E8;
-    constexpr std::ptrdiff_t m_bPawnHasHelmet = 0x7E9;
-    constexpr std::ptrdiff_t m_nPawnCharacterDefIndex = 0x7EA;
-    constexpr std::ptrdiff_t m_iPawnLifetimeStart = 0x7EC;
-    constexpr std::ptrdiff_t m_iPawnLifetimeEnd = 0x7F0;
-    constexpr std::ptrdiff_t m_iPawnBotDifficulty = 0x7F4;
-    constexpr std::ptrdiff_t m_hOriginalControllerOfCurrentPawn = 0x7F8;
-    constexpr std::ptrdiff_t m_iScore = 0x7FC;
-    constexpr std::ptrdiff_t m_vecKills = 0x800;
-    constexpr std::ptrdiff_t m_iMVPs = 0x818;
-    constexpr std::ptrdiff_t m_bIsPlayerNameDirty = 0x81C;
+    constexpr std::ptrdiff_t m_pInGameMoneyServices = 0x700;
+    constexpr std::ptrdiff_t m_pInventoryServices = 0x708;
+    constexpr std::ptrdiff_t m_pActionTrackingServices = 0x710;
+    constexpr std::ptrdiff_t m_pDamageServices = 0x718;
+    constexpr std::ptrdiff_t m_iPing = 0x720;
+    constexpr std::ptrdiff_t m_bHasCommunicationAbuseMute = 0x724;
+    constexpr std::ptrdiff_t m_szCrosshairCodes = 0x728;
+    constexpr std::ptrdiff_t m_iPendingTeamNum = 0x730;
+    constexpr std::ptrdiff_t m_flForceTeamTime = 0x734;
+    constexpr std::ptrdiff_t m_iCompTeammateColor = 0x738;
+    constexpr std::ptrdiff_t m_bEverPlayedOnTeam = 0x73C;
+    constexpr std::ptrdiff_t m_flPreviousForceJoinTeamTime = 0x740;
+    constexpr std::ptrdiff_t m_szClan = 0x748;
+    constexpr std::ptrdiff_t m_sSanitizedPlayerName = 0x750;
+    constexpr std::ptrdiff_t m_iCoachingTeam = 0x758;
+    constexpr std::ptrdiff_t m_nPlayerDominated = 0x760;
+    constexpr std::ptrdiff_t m_nPlayerDominatingMe = 0x768;
+    constexpr std::ptrdiff_t m_iCompetitiveRanking = 0x770;
+    constexpr std::ptrdiff_t m_iCompetitiveWins = 0x774;
+    constexpr std::ptrdiff_t m_iCompetitiveRankType = 0x778;
+    constexpr std::ptrdiff_t m_iCompetitiveRankingPredicted_Win = 0x77C;
+    constexpr std::ptrdiff_t m_iCompetitiveRankingPredicted_Loss = 0x780;
+    constexpr std::ptrdiff_t m_iCompetitiveRankingPredicted_Tie = 0x784;
+    constexpr std::ptrdiff_t m_nEndMatchNextMapVote = 0x788;
+    constexpr std::ptrdiff_t m_unActiveQuestId = 0x78C;
+    constexpr std::ptrdiff_t m_nQuestProgressReason = 0x790;
+    constexpr std::ptrdiff_t m_unPlayerTvControlFlags = 0x794;
+    constexpr std::ptrdiff_t m_iDraftIndex = 0x7C0;
+    constexpr std::ptrdiff_t m_msQueuedModeDisconnectionTimestamp = 0x7C4;
+    constexpr std::ptrdiff_t m_uiAbandonRecordedReason = 0x7C8;
+    constexpr std::ptrdiff_t m_bCannotBeKicked = 0x7CC;
+    constexpr std::ptrdiff_t m_bEverFullyConnected = 0x7CD;
+    constexpr std::ptrdiff_t m_bAbandonAllowsSurrender = 0x7CE;
+    constexpr std::ptrdiff_t m_bAbandonOffersInstantSurrender = 0x7CF;
+    constexpr std::ptrdiff_t m_bDisconnection1MinWarningPrinted = 0x7D0;
+    constexpr std::ptrdiff_t m_bScoreReported = 0x7D1;
+    constexpr std::ptrdiff_t m_nDisconnectionTick = 0x7D4;
+    constexpr std::ptrdiff_t m_bControllingBot = 0x7E0;
+    constexpr std::ptrdiff_t m_bHasControlledBotThisRound = 0x7E1;
+    constexpr std::ptrdiff_t m_bHasBeenControlledByPlayerThisRound = 0x7E2;
+    constexpr std::ptrdiff_t m_nBotsControlledThisRound = 0x7E4;
+    constexpr std::ptrdiff_t m_bCanControlObservedBot = 0x7E8;
+    constexpr std::ptrdiff_t m_hPlayerPawn = 0x7EC;
+    constexpr std::ptrdiff_t m_hObserverPawn = 0x7F0;
+    constexpr std::ptrdiff_t m_bPawnIsAlive = 0x7F4;
+    constexpr std::ptrdiff_t m_iPawnHealth = 0x7F8;
+    constexpr std::ptrdiff_t m_iPawnArmor = 0x7FC;
+    constexpr std::ptrdiff_t m_bPawnHasDefuser = 0x800;
+    constexpr std::ptrdiff_t m_bPawnHasHelmet = 0x801;
+    constexpr std::ptrdiff_t m_nPawnCharacterDefIndex = 0x802;
+    constexpr std::ptrdiff_t m_iPawnLifetimeStart = 0x804;
+    constexpr std::ptrdiff_t m_iPawnLifetimeEnd = 0x808;
+    constexpr std::ptrdiff_t m_iPawnBotDifficulty = 0x80C;
+    constexpr std::ptrdiff_t m_hOriginalControllerOfCurrentPawn = 0x810;
+    constexpr std::ptrdiff_t m_iScore = 0x814;
+    constexpr std::ptrdiff_t m_vecKills = 0x818;
+    constexpr std::ptrdiff_t m_iMVPs = 0x830;
+    constexpr std::ptrdiff_t m_bIsPlayerNameDirty = 0x834;
 }
 
 namespace CCSPlayerController_ActionTrackingServices {
@@ -567,9 +567,11 @@ namespace CDecalInfo {
     constexpr std::ptrdiff_t m_flFadeDuration = 0x10;
     constexpr std::ptrdiff_t m_nVBSlot = 0x14;
     constexpr std::ptrdiff_t m_nBoneIndex = 0x18;
-    constexpr std::ptrdiff_t m_pNext = 0x28;
-    constexpr std::ptrdiff_t m_pPrev = 0x30;
-    constexpr std::ptrdiff_t m_nDecalMaterialIndex = 0x90;
+    constexpr std::ptrdiff_t m_vPosition = 0x28;
+    constexpr std::ptrdiff_t m_flBoundingRadiusSqr = 0x34;
+    constexpr std::ptrdiff_t m_pNext = 0x40;
+    constexpr std::ptrdiff_t m_pPrev = 0x48;
+    constexpr std::ptrdiff_t m_nDecalMaterialIndex = 0xA8;
 }
 
 namespace CEconItemAttribute {
@@ -1195,34 +1197,35 @@ namespace C_BaseButton {
 }
 
 namespace C_BaseCSGrenade {
-    constexpr std::ptrdiff_t m_bClientPredictDelete = 0x19D0;
-    constexpr std::ptrdiff_t m_bRedraw = 0x19D1;
-    constexpr std::ptrdiff_t m_bIsHeldByPlayer = 0x19D2;
-    constexpr std::ptrdiff_t m_bPinPulled = 0x19D3;
-    constexpr std::ptrdiff_t m_bJumpThrow = 0x19D4;
-    constexpr std::ptrdiff_t m_eThrowStatus = 0x19D8;
-    constexpr std::ptrdiff_t m_fThrowTime = 0x19DC;
-    constexpr std::ptrdiff_t m_flThrowStrength = 0x19E0;
-    constexpr std::ptrdiff_t m_flThrowStrengthApproach = 0x19E4;
-    constexpr std::ptrdiff_t m_fDropTime = 0x19E8;
+    constexpr std::ptrdiff_t m_bClientPredictDelete = 0x19F0;
+    constexpr std::ptrdiff_t m_bRedraw = 0x19F1;
+    constexpr std::ptrdiff_t m_bIsHeldByPlayer = 0x19F2;
+    constexpr std::ptrdiff_t m_bPinPulled = 0x19F3;
+    constexpr std::ptrdiff_t m_bJumpThrow = 0x19F4;
+    constexpr std::ptrdiff_t m_eThrowStatus = 0x19F8;
+    constexpr std::ptrdiff_t m_fThrowTime = 0x19FC;
+    constexpr std::ptrdiff_t m_flThrowStrength = 0x1A00;
+    constexpr std::ptrdiff_t m_flThrowStrengthApproach = 0x1A04;
+    constexpr std::ptrdiff_t m_fDropTime = 0x1A08;
 }
 
 namespace C_BaseCSGrenadeProjectile {
-    constexpr std::ptrdiff_t m_vInitialVelocity = 0x1068;
-    constexpr std::ptrdiff_t m_nBounces = 0x1074;
-    constexpr std::ptrdiff_t m_nExplodeEffectIndex = 0x1078;
-    constexpr std::ptrdiff_t m_nExplodeEffectTickBegin = 0x1080;
-    constexpr std::ptrdiff_t m_vecExplodeEffectOrigin = 0x1084;
-    constexpr std::ptrdiff_t m_flSpawnTime = 0x1090;
-    constexpr std::ptrdiff_t vecLastTrailLinePos = 0x1094;
-    constexpr std::ptrdiff_t flNextTrailLineTime = 0x10A0;
-    constexpr std::ptrdiff_t m_bExplodeEffectBegan = 0x10A4;
-    constexpr std::ptrdiff_t m_bCanCreateGrenadeTrail = 0x10A5;
-    constexpr std::ptrdiff_t m_nSnapshotTrajectoryEffectIndex = 0x10A8;
-    constexpr std::ptrdiff_t m_hSnapshotTrajectoryParticleSnapshot = 0x10B0;
-    constexpr std::ptrdiff_t m_arrTrajectoryTrailPoints = 0x10B8;
-    constexpr std::ptrdiff_t m_arrTrajectoryTrailPointCreationTimes = 0x10D0;
-    constexpr std::ptrdiff_t m_flTrajectoryTrailEffectCreationTime = 0x10E8;
+    constexpr std::ptrdiff_t m_vInitialPosition = 0x1068;
+    constexpr std::ptrdiff_t m_vInitialVelocity = 0x1074;
+    constexpr std::ptrdiff_t m_nBounces = 0x1080;
+    constexpr std::ptrdiff_t m_nExplodeEffectIndex = 0x1088;
+    constexpr std::ptrdiff_t m_nExplodeEffectTickBegin = 0x1090;
+    constexpr std::ptrdiff_t m_vecExplodeEffectOrigin = 0x1094;
+    constexpr std::ptrdiff_t m_flSpawnTime = 0x10A0;
+    constexpr std::ptrdiff_t vecLastTrailLinePos = 0x10A4;
+    constexpr std::ptrdiff_t flNextTrailLineTime = 0x10B0;
+    constexpr std::ptrdiff_t m_bExplodeEffectBegan = 0x10B4;
+    constexpr std::ptrdiff_t m_bCanCreateGrenadeTrail = 0x10B5;
+    constexpr std::ptrdiff_t m_nSnapshotTrajectoryEffectIndex = 0x10B8;
+    constexpr std::ptrdiff_t m_hSnapshotTrajectoryParticleSnapshot = 0x10C0;
+    constexpr std::ptrdiff_t m_arrTrajectoryTrailPoints = 0x10C8;
+    constexpr std::ptrdiff_t m_arrTrajectoryTrailPointCreationTimes = 0x10E0;
+    constexpr std::ptrdiff_t m_flTrajectoryTrailEffectCreationTime = 0x10F8;
 }
 
 namespace C_BaseClientUIEntity {
@@ -1560,17 +1563,18 @@ namespace C_BulletHitModel {
 }
 
 namespace C_C4 {
-    constexpr std::ptrdiff_t m_szScreenText = 0x19D0;
-    constexpr std::ptrdiff_t m_bombdroppedlightParticleIndex = 0x19F0;
-    constexpr std::ptrdiff_t m_bStartedArming = 0x19F4;
-    constexpr std::ptrdiff_t m_fArmedTime = 0x19F8;
-    constexpr std::ptrdiff_t m_bBombPlacedAnimation = 0x19FC;
-    constexpr std::ptrdiff_t m_bIsPlantingViaUse = 0x19FD;
-    constexpr std::ptrdiff_t m_entitySpottedState = 0x1A00;
-    constexpr std::ptrdiff_t m_nSpotRules = 0x1A18;
-    constexpr std::ptrdiff_t m_bPlayedArmingBeeps = 0x1A1C;
-    constexpr std::ptrdiff_t m_bBombPlanted = 0x1A23;
-    constexpr std::ptrdiff_t m_bDroppedFromDeath = 0x1A24;
+    constexpr std::ptrdiff_t m_szScreenText = 0x19F0;
+    constexpr std::ptrdiff_t m_activeLightParticleIndex = 0x1A10;
+    constexpr std::ptrdiff_t m_eActiveLightEffect = 0x1A14;
+    constexpr std::ptrdiff_t m_bStartedArming = 0x1A18;
+    constexpr std::ptrdiff_t m_fArmedTime = 0x1A1C;
+    constexpr std::ptrdiff_t m_bBombPlacedAnimation = 0x1A20;
+    constexpr std::ptrdiff_t m_bIsPlantingViaUse = 0x1A21;
+    constexpr std::ptrdiff_t m_entitySpottedState = 0x1A28;
+    constexpr std::ptrdiff_t m_nSpotRules = 0x1A40;
+    constexpr std::ptrdiff_t m_bPlayedArmingBeeps = 0x1A44;
+    constexpr std::ptrdiff_t m_bBombPlanted = 0x1A4B;
+    constexpr std::ptrdiff_t m_bDroppedFromDeath = 0x1A4C;
 }
 
 namespace C_CSGOViewModel {
@@ -1615,9 +1619,9 @@ namespace C_CSGO_PreviewModel {
 }
 
 namespace C_CSGO_PreviewPlayer {
-    constexpr std::ptrdiff_t m_animgraph = 0x22E0;
-    constexpr std::ptrdiff_t m_animgraphCharacterModeString = 0x22E8;
-    constexpr std::ptrdiff_t m_flInitialModelScale = 0x22F0;
+    constexpr std::ptrdiff_t m_animgraph = 0x22E8;
+    constexpr std::ptrdiff_t m_animgraphCharacterModeString = 0x22F0;
+    constexpr std::ptrdiff_t m_flInitialModelScale = 0x22F8;
 }
 
 namespace C_CSGO_TeamPreviewCamera {
@@ -1732,10 +1736,10 @@ namespace C_CSGameRules {
     constexpr std::ptrdiff_t m_iNumConsecutiveCTLoses = 0xCEC;
     constexpr std::ptrdiff_t m_iNumConsecutiveTerroristLoses = 0xCF0;
     constexpr std::ptrdiff_t m_bMarkClientStopRecordAtRoundEnd = 0xD10;
-    constexpr std::ptrdiff_t m_bMatchAbortedDueToPlayerBan = 0xD68;
-    constexpr std::ptrdiff_t m_bHasTriggeredRoundStartMusic = 0xD69;
-    constexpr std::ptrdiff_t m_bHasTriggeredCoopSpawnReset = 0xD6A;
-    constexpr std::ptrdiff_t m_bSwitchingTeamsAtRoundReset = 0xD6B;
+    constexpr std::ptrdiff_t m_nMatchAbortedEarlyReason = 0xD68;
+    constexpr std::ptrdiff_t m_bHasTriggeredRoundStartMusic = 0xD6C;
+    constexpr std::ptrdiff_t m_bHasTriggeredCoopSpawnReset = 0xD6D;
+    constexpr std::ptrdiff_t m_bSwitchingTeamsAtRoundReset = 0xD6E;
     constexpr std::ptrdiff_t m_pGameModeRules = 0xD88;
     constexpr std::ptrdiff_t m_RetakeRules = 0xD90;
     constexpr std::ptrdiff_t m_nMatchEndCount = 0xEA8;
@@ -1800,11 +1804,11 @@ namespace C_CSPlayerPawn {
     constexpr std::ptrdiff_t m_szRagdollDamageWeaponName = 0x1D20;
     constexpr std::ptrdiff_t m_bRagdollDamageHeadshot = 0x1D60;
     constexpr std::ptrdiff_t m_vRagdollServerOrigin = 0x1D64;
-    constexpr std::ptrdiff_t m_bLastHeadBoneTransformIsValid = 0x22A8;
-    constexpr std::ptrdiff_t m_lastLandTime = 0x22AC;
-    constexpr std::ptrdiff_t m_bOnGroundLastTick = 0x22B0;
-    constexpr std::ptrdiff_t m_qDeathEyeAngles = 0x22CC;
-    constexpr std::ptrdiff_t m_bSkipOneHeadConstraintUpdate = 0x22D8;
+    constexpr std::ptrdiff_t m_bLastHeadBoneTransformIsValid = 0x22B0;
+    constexpr std::ptrdiff_t m_lastLandTime = 0x22B4;
+    constexpr std::ptrdiff_t m_bOnGroundLastTick = 0x22B8;
+    constexpr std::ptrdiff_t m_qDeathEyeAngles = 0x22D4;
+    constexpr std::ptrdiff_t m_bSkipOneHeadConstraintUpdate = 0x22E0;
 }
 
 namespace C_CSPlayerPawnBase {
@@ -2039,19 +2043,19 @@ namespace C_CSWeaponBase {
     constexpr std::ptrdiff_t m_lastSmokeTime = 0x17C8;
     constexpr std::ptrdiff_t m_flNextClientFireBulletTime = 0x17CC;
     constexpr std::ptrdiff_t m_flNextClientFireBulletTime_Repredict = 0x17D0;
-    constexpr std::ptrdiff_t m_IronSightController = 0x1890;
-    constexpr std::ptrdiff_t m_iIronSightMode = 0x1940;
-    constexpr std::ptrdiff_t m_flLastLOSTraceFailureTime = 0x1950;
-    constexpr std::ptrdiff_t m_iNumEmptyAttacks = 0x1954;
+    constexpr std::ptrdiff_t m_IronSightController = 0x18B0;
+    constexpr std::ptrdiff_t m_iIronSightMode = 0x1960;
+    constexpr std::ptrdiff_t m_flLastLOSTraceFailureTime = 0x1970;
+    constexpr std::ptrdiff_t m_iNumEmptyAttacks = 0x1974;
 }
 
 namespace C_CSWeaponBaseGun {
-    constexpr std::ptrdiff_t m_zoomLevel = 0x19D0;
-    constexpr std::ptrdiff_t m_iBurstShotsRemaining = 0x19D4;
-    constexpr std::ptrdiff_t m_iSilencerBodygroup = 0x19D8;
-    constexpr std::ptrdiff_t m_silencedModelIndex = 0x19E8;
-    constexpr std::ptrdiff_t m_inPrecache = 0x19EC;
-    constexpr std::ptrdiff_t m_bNeedsBoltAction = 0x19ED;
+    constexpr std::ptrdiff_t m_zoomLevel = 0x19F0;
+    constexpr std::ptrdiff_t m_iBurstShotsRemaining = 0x19F4;
+    constexpr std::ptrdiff_t m_iSilencerBodygroup = 0x19F8;
+    constexpr std::ptrdiff_t m_silencedModelIndex = 0x1A08;
+    constexpr std::ptrdiff_t m_inPrecache = 0x1A0C;
+    constexpr std::ptrdiff_t m_bNeedsBoltAction = 0x1A0D;
 }
 
 namespace C_Chicken {
@@ -2117,7 +2121,7 @@ namespace C_ColorCorrectionVolume {
 
 namespace C_CommandContext {
     constexpr std::ptrdiff_t needsprocessing = 0x0;
-    constexpr std::ptrdiff_t command_number = 0x90;
+    constexpr std::ptrdiff_t command_number = 0xA8;
 }
 
 namespace C_CsmFovOverride {
@@ -2126,9 +2130,9 @@ namespace C_CsmFovOverride {
 }
 
 namespace C_DecoyProjectile {
-    constexpr std::ptrdiff_t m_nDecoyShotTick = 0x10F0;
-    constexpr std::ptrdiff_t m_nClientLastKnownDecoyShotTick = 0x10F4;
-    constexpr std::ptrdiff_t m_flTimeParticleEffectSpawn = 0x1118;
+    constexpr std::ptrdiff_t m_nDecoyShotTick = 0x1100;
+    constexpr std::ptrdiff_t m_nClientLastKnownDecoyShotTick = 0x1104;
+    constexpr std::ptrdiff_t m_flTimeParticleEffectSpawn = 0x1128;
 }
 
 namespace C_DynamicLight {
@@ -2533,8 +2537,8 @@ namespace C_Fish {
 }
 
 namespace C_Fists {
-    constexpr std::ptrdiff_t m_bPlayingUninterruptableAct = 0x19D0;
-    constexpr std::ptrdiff_t m_nUninterruptableActivity = 0x19D4;
+    constexpr std::ptrdiff_t m_bPlayingUninterruptableAct = 0x19F0;
+    constexpr std::ptrdiff_t m_nUninterruptableActivity = 0x19F4;
 }
 
 namespace C_FogController {
@@ -2776,11 +2780,11 @@ namespace C_MapVetoPickController {
 }
 
 namespace C_Melee {
-    constexpr std::ptrdiff_t m_flThrowAt = 0x19D0;
+    constexpr std::ptrdiff_t m_flThrowAt = 0x19F0;
 }
 
 namespace C_MolotovProjectile {
-    constexpr std::ptrdiff_t m_bIsIncGrenade = 0x10F0;
+    constexpr std::ptrdiff_t m_bIsIncGrenade = 0x1100;
 }
 
 namespace C_Multimeter {
@@ -3238,14 +3242,14 @@ namespace C_SkyCamera {
 }
 
 namespace C_SmokeGrenadeProjectile {
-    constexpr std::ptrdiff_t m_nSmokeEffectTickBegin = 0x10F8;
-    constexpr std::ptrdiff_t m_bDidSmokeEffect = 0x10FC;
-    constexpr std::ptrdiff_t m_nRandomSeed = 0x1100;
-    constexpr std::ptrdiff_t m_vSmokeColor = 0x1104;
-    constexpr std::ptrdiff_t m_vSmokeDetonationPos = 0x1110;
-    constexpr std::ptrdiff_t m_VoxelFrameData = 0x1120;
-    constexpr std::ptrdiff_t m_bSmokeVolumeDataReceived = 0x1138;
-    constexpr std::ptrdiff_t m_bSmokeEffectSpawned = 0x1139;
+    constexpr std::ptrdiff_t m_nSmokeEffectTickBegin = 0x1108;
+    constexpr std::ptrdiff_t m_bDidSmokeEffect = 0x110C;
+    constexpr std::ptrdiff_t m_nRandomSeed = 0x1110;
+    constexpr std::ptrdiff_t m_vSmokeColor = 0x1114;
+    constexpr std::ptrdiff_t m_vSmokeDetonationPos = 0x1120;
+    constexpr std::ptrdiff_t m_VoxelFrameData = 0x1130;
+    constexpr std::ptrdiff_t m_bSmokeVolumeDataReceived = 0x1148;
+    constexpr std::ptrdiff_t m_bSmokeEffectSpawned = 0x1149;
 }
 
 namespace C_SoundAreaEntityBase {
@@ -3411,16 +3415,16 @@ namespace C_VoteController {
 }
 
 namespace C_WeaponBaseItem {
-    constexpr std::ptrdiff_t m_SequenceCompleteTimer = 0x19D0;
-    constexpr std::ptrdiff_t m_bRedraw = 0x19E8;
+    constexpr std::ptrdiff_t m_SequenceCompleteTimer = 0x19F0;
+    constexpr std::ptrdiff_t m_bRedraw = 0x1A08;
 }
 
 namespace C_WeaponShield {
-    constexpr std::ptrdiff_t m_flDisplayHealth = 0x19F0;
+    constexpr std::ptrdiff_t m_flDisplayHealth = 0x1A10;
 }
 
 namespace C_WeaponTaser {
-    constexpr std::ptrdiff_t m_fFireTime = 0x19F0;
+    constexpr std::ptrdiff_t m_fFireTime = 0x1A10;
 }
 
 namespace C_fogplayerparams_t {
