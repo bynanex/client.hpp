@@ -1601,7 +1601,7 @@ namespace C_CSGOViewModel {
     constexpr std::ptrdiff_t m_nOldWeaponParity = 0xF70;
     constexpr std::ptrdiff_t m_nLastKnownAssociatedWeaponEntIndex = 0xF74;
     constexpr std::ptrdiff_t m_bNeedToQueueHighResComposite = 0xF78;
-    constexpr std::ptrdiff_t m_vLoweredWeaponOffset = 0xFBC;
+    constexpr std::ptrdiff_t m_vLoweredWeaponOffset = 0xFDC;
 }
 
 namespace C_CSGO_MapPreviewCameraPath {
@@ -2054,7 +2054,7 @@ namespace C_CSWeaponBase {
     constexpr std::ptrdiff_t m_iAlpha = 0x16B8;
     constexpr std::ptrdiff_t m_iScopeTextureID = 0x16BC;
     constexpr std::ptrdiff_t m_iCrosshairTextureID = 0x16C0;
-    constexpr std::ptrdiff_t m_flGunAccuracyPosition = 0x16C4;
+    constexpr std::ptrdiff_t m_flGunAccuracyPositionDeprecated = 0x16C4;
     constexpr std::ptrdiff_t m_nLastEmptySoundCmdNum = 0x16C8;
     constexpr std::ptrdiff_t m_nViewModelIndex = 0x16CC;
     constexpr std::ptrdiff_t m_bReloadsWithClips = 0x16D0;
@@ -3179,8 +3179,9 @@ namespace C_Precipitation {
 }
 
 namespace C_PredictedViewModel {
-    constexpr std::ptrdiff_t m_LagAnglesHistory = 0xF40;
-    constexpr std::ptrdiff_t m_vPredictedOffset = 0xF58;
+    constexpr std::ptrdiff_t m_vPredictedLagOffset = 0xF40;
+    constexpr std::ptrdiff_t m_targetSpeed = 0xF4C;
+    constexpr std::ptrdiff_t m_currentSpeed = 0xF58;
 }
 
 namespace C_RagdollManager {
