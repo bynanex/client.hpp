@@ -284,8 +284,12 @@ namespace CCSPlayerController {
     constexpr std::ptrdiff_t m_hOriginalControllerOfCurrentPawn = 0x808;
     constexpr std::ptrdiff_t m_iScore = 0x80C;
     constexpr std::ptrdiff_t m_vecKills = 0x810;
-    constexpr std::ptrdiff_t m_iMVPs = 0x828;
-    constexpr std::ptrdiff_t m_bIsPlayerNameDirty = 0x82C;
+    constexpr std::ptrdiff_t m_bMvpNoMusic = 0x828;
+    constexpr std::ptrdiff_t m_eMvpReason = 0x82C;
+    constexpr std::ptrdiff_t m_iMusicKitID = 0x830;
+    constexpr std::ptrdiff_t m_iMusicKitMVPs = 0x834;
+    constexpr std::ptrdiff_t m_iMVPs = 0x838;
+    constexpr std::ptrdiff_t m_bIsPlayerNameDirty = 0x83C;
 }
 
 namespace CCSPlayerController_ActionTrackingServices {
@@ -1592,7 +1596,6 @@ namespace C_C4 {
     constexpr std::ptrdiff_t m_nSpotRules = 0x1AC0;
     constexpr std::ptrdiff_t m_bPlayedArmingBeeps = 0x1AC4;
     constexpr std::ptrdiff_t m_bBombPlanted = 0x1ACB;
-    constexpr std::ptrdiff_t m_bDroppedFromDeath = 0x1ACC;
 }
 
 namespace C_CSGOViewModel {
