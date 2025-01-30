@@ -1,5 +1,5 @@
 // Generated using n0x
-// 2024-11-15 17:25:29.287188400 UTC
+// 2025-01-30 10:02:48.846810300 UTC
 
 #pragma once
 
@@ -2928,13 +2928,13 @@ namespace cs2_dumper {
             // Parent: C_CSGO_MapPreviewCameraPath
             // Fields count: 7
             namespace C_CSGO_TeamPreviewCamera {
-                constexpr std::ptrdiff_t m_nVariant = 0x5D0; // int32
-                constexpr std::ptrdiff_t m_bDofEnabled = 0x5D4; // bool
-                constexpr std::ptrdiff_t m_flDofNearBlurry = 0x5D8; // float32
-                constexpr std::ptrdiff_t m_flDofNearCrisp = 0x5DC; // float32
-                constexpr std::ptrdiff_t m_flDofFarCrisp = 0x5E0; // float32
-                constexpr std::ptrdiff_t m_flDofFarBlurry = 0x5E4; // float32
-                constexpr std::ptrdiff_t m_flDofTiltToGround = 0x5E8; // float32
+                constexpr std::ptrdiff_t m_nVariant = 0x5D8; // int32
+                constexpr std::ptrdiff_t m_bDofEnabled = 0x5DC; // bool
+                constexpr std::ptrdiff_t m_flDofNearBlurry = 0x5E0; // float32
+                constexpr std::ptrdiff_t m_flDofNearCrisp = 0x5E4; // float32
+                constexpr std::ptrdiff_t m_flDofFarCrisp = 0x5E8; // float32
+                constexpr std::ptrdiff_t m_flDofFarBlurry = 0x5EC; // float32
+                constexpr std::ptrdiff_t m_flDofTiltToGround = 0x5F0; // float32
             }
             // Parent: CCSPlayerBase_CameraServices
             // Fields count: 2
