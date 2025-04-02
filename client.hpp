@@ -1,5 +1,5 @@
 // Generated using n0x
-// 2025-03-23 00:44:23.351222200 UTC
+// 2025-04-02 18:10:46.009220900 UTC
 
 #pragma once
 
@@ -8,7 +8,7 @@
 namespace cs2_dumper {
     namespace schemas {
         // Module: client.dll
-        // Classes count: 427
+        // Classes count: 414
         // Enums count: 7
         namespace client_dll {
             // Alignment: 4
@@ -1424,10 +1424,6 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_iEffectName = 0x6C; // uint16
                 constexpr std::ptrdiff_t m_nExplosionType = 0x6E; // uint8
             }
-            // Parent: C_BaseCSGrenadeProjectile
-            // Fields count: 0
-            namespace C_SensorGrenadeProjectile {
-            }
             // Parent: C_BaseCSGrenade
             // Fields count: 0
             namespace C_MolotovGrenade {
@@ -1828,10 +1824,6 @@ namespace cs2_dumper {
             // Parent: C_BaseCSGrenade
             // Fields count: 0
             namespace C_Flashbang {
-            }
-            // Parent: C_CSWeaponBase
-            // Fields count: 0
-            namespace CBumpMine {
             }
             // Parent: None
             // Fields count: 13
@@ -2459,14 +2451,6 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_RagdollPose = 0xDF8; // PhysicsRagdollPose_t
                 constexpr std::ptrdiff_t m_bRagdollClientSide = 0xE40; // bool
                 constexpr std::ptrdiff_t m_bHasAnimatedMaterialAttributes = 0xE50; // bool
-            }
-            // Parent: C_CSWeaponBase
-            // Fields count: 0
-            namespace C_Melee {
-            }
-            // Parent: C_BaseGrenade
-            // Fields count: 0
-            namespace CBreachChargeProjectile {
             }
             // Parent: C_BaseEntity
             // Fields count: 0
@@ -3489,10 +3473,6 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_flObserverChaseDistance = 0x50; // float32
                 constexpr std::ptrdiff_t m_flObserverChaseDistanceCalcTime = 0x54; // GameTime_t
             }
-            // Parent: C_CSWeaponBaseGun
-            // Fields count: 0
-            namespace CWeaponZoneRepulsor {
-            }
             // Parent: CPlayerPawnComponent
             // Fields count: 0
             namespace CPlayer_WaterServices {
@@ -3970,14 +3950,6 @@ namespace cs2_dumper {
             // Parent: C_CSWeaponBaseGun
             // Fields count: 0
             namespace C_WeaponMAC10 {
-            }
-            // Parent: C_CSWeaponBaseGun
-            // Fields count: 1
-            //
-            // Metadata:
-            // NetworkVarNames: m_flDisplayHealth (float)
-            namespace C_WeaponShield {
-                constexpr std::ptrdiff_t m_flDisplayHealth = 0x1B40; // float32
             }
             // Parent: C_PointClientUIWorldPanel
             // Fields count: 1
@@ -4774,10 +4746,6 @@ namespace cs2_dumper {
             // Fields count: 0
             namespace C_WeaponHKP2000 {
             }
-            // Parent: C_BaseCSGrenade
-            // Fields count: 0
-            namespace CTripWireFire {
-            }
             // Parent: C_BaseFlex
             // Fields count: 6
             namespace C_CSGO_PreviewModel {
@@ -4888,10 +4856,6 @@ namespace cs2_dumper {
             namespace CCSPlayer_HostageServices {
                 constexpr std::ptrdiff_t m_hCarriedHostage = 0x40; // CHandle<C_BaseEntity>
                 constexpr std::ptrdiff_t m_hCarriedHostageProp = 0x44; // CHandle<C_BaseEntity>
-            }
-            // Parent: C_CSWeaponBase
-            // Fields count: 0
-            namespace CBreachCharge {
             }
             // Parent: C_LightEntity
             // Fields count: 0
@@ -5064,10 +5028,6 @@ namespace cs2_dumper {
             // MPulseLibraryBindings
             namespace CPathSimpleAPI {
             }
-            // Parent: C_BaseCSGrenade
-            // Fields count: 0
-            namespace C_SensorGrenade {
-            }
             // Parent: C_CSWeaponBaseGun
             // Fields count: 2
             //
@@ -5076,16 +5036,6 @@ namespace cs2_dumper {
             namespace C_WeaponTaser {
                 constexpr std::ptrdiff_t m_fFireTime = 0x1B40; // GameTime_t
                 constexpr std::ptrdiff_t m_nLastAttackTick = 0x1B44; // int32
-            }
-            // Parent: C_CSWeaponBase
-            // Fields count: 2
-            //
-            // Metadata:
-            // NetworkVarNames: m_bPlayingUninterruptableAct (bool)
-            // NetworkVarNames: m_nUninterruptableActivity (PlayerAnimEvent_t)
-            namespace C_Fists {
-                constexpr std::ptrdiff_t m_bPlayingUninterruptableAct = 0x1B20; // bool
-                constexpr std::ptrdiff_t m_nUninterruptableActivity = 0x1B24; // PlayerAnimEvent_t
             }
             // Parent: C_PhysicsProp
             // Fields count: 0
@@ -6216,10 +6166,6 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_nJustifyVertical = 0xFF0; // PointWorldTextJustifyVertical_t
                 constexpr std::ptrdiff_t m_nReorientMode = 0xFF4; // PointWorldTextReorientMode_t
             }
-            // Parent: C_BaseGrenade
-            // Fields count: 0
-            namespace CBumpMineProjectile {
-            }
             // Parent: CBasePlayerController
             // Fields count: 66
             //
@@ -6608,10 +6554,6 @@ namespace cs2_dumper {
             // Fields count: 0
             namespace C_IncendiaryGrenade {
             }
-            // Parent: C_CSWeaponBase
-            // Fields count: 0
-            namespace CTablet {
-            }
             // Parent: CBasePulseGraphInstance
             // Fields count: 1
             //
@@ -6650,10 +6592,6 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_hEntAttached = 0x568; // CHandle<C_BaseEntity>
                 constexpr std::ptrdiff_t m_hOldAttached = 0x590; // CHandle<C_BaseEntity>
                 constexpr std::ptrdiff_t m_bCheapEffect = 0x594; // bool
-            }
-            // Parent: C_BaseGrenade
-            // Fields count: 0
-            namespace CTripWireFireProjectile {
             }
             // Parent: C_BaseModelEntity
             // Fields count: 0
