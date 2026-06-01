@@ -1,5 +1,5 @@
 // Generated using n0x
-// 2026-05-25 21:02:21.512715500 UTC
+// 2026-06-01 16:05:02.712944600 UTC
 
 #pragma once
 
@@ -9,7 +9,7 @@ namespace cs2_dumper {
     namespace schemas {
         // Module: client.dll
         // Classes count: 504
-        // Enums count: 8
+        // Enums count: 12
         namespace client_dll {
             // Alignment: 4
             // Members count: 15
